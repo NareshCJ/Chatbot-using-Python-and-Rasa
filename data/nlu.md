@@ -24,14 +24,17 @@
  - time zone of [Lisbon](city)?
  - do you know time zone for [Berlin](city)?
  - I need to know the time zone of [Mumbai](city)?
+ - [Oslo](city) time zone
+ - What is the time in [Prague](city)
 
 ## intent:city_info
 - [London](city)
-- [San Fransisco](city)
+- [San Francisco](city)
 - [Toronto](city)
 - [New Delhi](city)
 - [Auckland](city)
 - [Oslo](city)
+- [Prague](city)
 
 ## intent:thanks
 - thank you

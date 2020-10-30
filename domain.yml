@@ -2,11 +2,15 @@ intents:
   - greet
   - goodbye
   - find_time_zone
-  - find_time_zone_for_locatino
+  - find_time_zone_for_location
   - city_info
   - thanks
+actions:
+  - action_show_time_zone
+
 entities:
   - city
+  
 slots:
   city:
     type: text
@@ -21,11 +25,13 @@ responses:
 
   utter_goodbye:
   - text: "Bye"
-
+ 
   utter_finding_time_zone:
   - text: "Ok, give me a second to look timezone of {city}"
+
   utter_you_are_welcome:
   - text: "You are welcome!"
-session_config:
+
+  session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

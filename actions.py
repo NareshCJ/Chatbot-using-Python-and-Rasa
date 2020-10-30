@@ -12,15 +12,16 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 timezones = {
-    'London': "UTC+1:00",
+    'London': 'UTC+1:00',
     'Sofia':'UTC+3:00',
-    'Lisbon': 'UTC+1:00'}
+    'Lisbon': 'UTC+2:00',
+    'Mumbai': 'UTC+5:30'}
 
 
 class ActionHelloWorld(Action):
 
     def name(self) -> Text:
-        return "action_hello_world"
+        return "action_show_time_zone"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
